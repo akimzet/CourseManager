@@ -13,8 +13,8 @@ const CourseListRow = ({course}) => {
     );
 };
 
-CourseListRow.PropTypes = {
-    courses: PropTypes.object.isRequired
+CourseListRow.propTypes = {
+    course: PropTypes.object.isRequired
 };
 
 export default CourseListRow;
