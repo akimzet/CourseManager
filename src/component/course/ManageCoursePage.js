@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import * as courseActions from '../../actions/courseActions';
 import CourseForm from './CourseForm';
-import { authorsFormattedFromDropdown } from '../../selectors/selectors';
+import { authorsFormattedForDropdown } from '../../selectors/selectors';
 import toastr from 'toastr';
 
 export class ManageCoursePage extends React.Component {
@@ -108,7 +108,7 @@ function mapStateToProps(state, ownProps) {
 
     return {
         course: course,
-        authors: authorsFormattedFromDropdown(state.authors)
+        authors: authorsFormattedForDropdown(state.authors)
     };
 }
 
